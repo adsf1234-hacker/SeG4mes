@@ -1,6 +1,2 @@
-https://raw.githubusercontent.com/colbychittenden/Tortilla/main/tortilla.png
-
-
-# Tortilla
-
-Welcome to Tortilla! 
+# old tortilla
+credits go to cobster expanded by me
