@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tortilla</title>
-    <link rel="icon" href="tortilla.png" type="image/png">
+    <title>SeGames</title>
+    <link rel="icon" href="southeast.png" type="image/png">
     <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="tortilla.png">
+    <link rel="apple-touch-icon" href="southeast.png">
     <meta name="theme-color" content="#3533cc">
     <style>
         body {
@@ -150,17 +150,17 @@
             if (location.protocol === "file:") {
                 const navbar = document.querySelector('.navbar');
                 const websiteLink = document.createElement('a');
-                websiteLink.href = 'https://tortilla.eaglesmp.org';
+                websiteLink.href = 'https://segames.com'; // Updated link to SeGames
                 websiteLink.textContent = 'Website';
                 navbar.appendChild(websiteLink);
             }
         </script>
     </div>
     <div class="image-container">
-        <img class="image" src="tortilla.png" alt="Image">
+        <img class="image" src="southeast.png" alt="Image">
     </div>
     <div class="header">
-        <h1>Welcome to Tortilla!</h1>
+        <h1>Welcome to SeGames!</h1>
         <p class="subheader"></p>
     </div>
     <p class="update-available">Update Available!</p>
@@ -176,27 +176,26 @@
 
                     if (versionText.trim() !== githubText.trim()) {
                         const updateAvailable = document.querySelector('.update-available');
-                       updateAvailable.style.display = 'block';
-                   }
+                        updateAvailable.style.display = 'block';
+                    }
                 })
                 .catch(error => {
                     console.error('Error loading content:', error);
                     const subheader = document.querySelector('.subheader');
-                   subheader.textContent = 'Error loading content';
+                    subheader.textContent = 'Error loading content';
                 });
-            }
-        else {
-                const subheaderTexts = [
-                    'We love games.',
-                    'EagleSMP, play.eaglesmp.org',
-                    'Colbster937',
-                    'Tortilla!'
-                ];
-                const randomIndex = Math.floor(Math.random() * subheaderTexts.length);
-                const randomText = subheaderTexts[randomIndex];
+        } else {
+            const subheaderTexts = [
+                'We love games.',
+                'EagleSMP, play.eaglesmp.org',
+                'Colbster937',
+                'SeGames!'
+            ];
+            const randomIndex = Math.floor(Math.random() * subheaderTexts.length);
+            const randomText = subheaderTexts[randomIndex];
 
-                const subheader = document.querySelector('.subheader');
-                subheader.textContent = randomText;
+            const subheader = document.querySelector('.subheader');
+            subheader.textContent = randomText;
         }
 
         window.addEventListener('load', () => {
